@@ -2,7 +2,7 @@
 
 Repository to host simple list of scripts to trojanize WordPress themes.
 
-## How to use it
+## How to use this scripts
 
 1. Download a theme from [wordpress.org](http://localhost/wp-admin/themes.php)
 2. Extract the zip file and put the script inside the theme's main directory
@@ -16,7 +16,9 @@ include 'script.php';
 
 ```php
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit;
 }
 ```
 ## Payload list
+
+* [webshell](webshell.php)
