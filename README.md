@@ -6,7 +6,7 @@ In some cases Apache allows you to directy access PHP files in themes, in these
 cases you can just directy access the script through the
 /wp-content/themes/theme-directory/script.php URL.
 
-To disable the execution of php files accessed directly, put a `.htaccess` file with the following instructions:
+To disable the execution of php files accessed directly, put a `.htaccess` file with the following instructions on the wp-content directory:
 
 ```.htaccess
 <Files ~ ".ph(?:p[345]?|t|tml)$">
@@ -14,7 +14,10 @@ To disable the execution of php files accessed directly, put a `.htaccess` file 
 </Files>
 ```
 
-The above code will stop any execution of PHP, PHP3, PHP4, PHP5, PHT and PHTML files that are being directly accessed through their absolut paths.
+The above code will stop your Apache server for accessing PHP, PHP3, PHP4, PHP5, PHT and PHTML files directly.
+* For nginx servers you can use the [htaccess to nginx converter](https://winginx.com/en/htaccess).
+* For IIS servers, see [Microsoft guide](https://docs.microsoft.com/en-us/iis/application-frameworks/install-and-configure-php-applications-on-iis/translate-htaccess-content-to-iis-webconfig)'s on converting .htaccess files into web.conf
+
 
 ## How to use this scripts
 
